@@ -34,7 +34,6 @@ File description: */
     document.getElementById("sendButton").addEventListener("click", clickSubmit);
 
     function clickSubmit() {
-        validateForm();
         event.preventDefault();
         let firstName = document.getElementById("firstName").value;
         let lastName = document.getElementById("lastName").value;
