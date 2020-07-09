@@ -1,9 +1,15 @@
+/*File name: app.css
+Author's name: Tamanna Yasmin Jitu
+Web site name: 
+Web site URL: 
+File description: This file is used for css customization*/
+
 /* custom syle sheet */
 
 html {
     scroll-behavior: smooth;
   }
-  
+
 .navbar {
     opacity: 0.8;
 }

@@ -1,3 +1,9 @@
+/*File name: app.js
+Author's name: Tamanna Yasmin Jitu
+Web site name: 
+Web site URL: 
+File description: */
+
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
     "use strict";
@@ -23,5 +29,36 @@
     document.getElementById("Ithaca").innerHTML = "Most famous for being the home of Odysseus, and a prominent figure in Homer's \"The Odyssey,\" Ithaca is said to have been inhabited since the 2nd millennium BC. Made up of two islands joined by a narrow strip of land, many visit it to see the legendary sites mentioned by Homer. However, Ithaca is more than its mythical counterpart, beckoning with secluded beaches, dramatic cliffs, beautiful olive groves, and sleepy fishing villages full of Byzantine churches and monasteries.";
 
     document.getElementById("Gavdos").innerHTML = "Near the more well-known Crete, Gavdos is the most southern island in Greece — and the most southern spot in Europe discounting the Canaries. Only accessible by ferry, the remote island has only about 50 permanent residents, and can feel like your private playground. Local legend has it that the island was the home of goddess Calypso, who kept Odysseus prisoner here. Today, a favorite tourist activity is to visit the spot believed to be her cave. Be warned, you won't find any luxury hotels here. While the romantically under-developed, super laid back island has a number of rooms for rent, those are limited, as the real draw here for many is the free, seaside camping.";
+
+
+    document.getElementById("sendButton").addEventListener("click", clickSubmit);
+
+    function clickSubmit() {
+        validateForm();
+        event.preventDefault();
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        let contactNumber = document.getElementById("contactNumber").value;
+        let email = document.getElementById("email").value;
+        let yourMessage = document.getElementById("yourMessage").value;
+
+        console.log("Your msg are listed below:");
+        console.log("From: " + lastName + ", " + firstName);
+        console.log("Sender contact number: " + contactNumber);
+        console.log("Email address: " + email);
+        console.log("Message body: " + yourMessage);
+
+        validateForm();
+        //return false;
+    }
+
+
+    //form validation
+    function validateForm() {
+        let contactForm = document.getElementById("contact");
+        return false;
+    }
+
+
 
 })();
