@@ -1,8 +1,10 @@
 /*File name: app.js
 Author's name: Tamanna Yasmin Jitu
-Web site name: 
-Web site URL: 
-File description: */
+Web site name: COMP125 - MidTerm Test
+Web site URL: https://tyjitu.github.io/COMP125-Midterm/
+File description: This file is for javascript
+
+*/
 
 // setup your IIFE (Immediately Invoked Function Expression)
 (function () {
@@ -50,7 +52,6 @@ File description: */
         validateForm();
         //return false;
     }
-
 
     //form validation
     function validateForm() {
